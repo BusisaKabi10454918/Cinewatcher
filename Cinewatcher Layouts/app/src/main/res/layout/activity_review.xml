@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+
+        android:src="@drawable/back_button"
+        android:background="@android:color/transparent"
+
+        android:contentDescription="returnButton"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/pageHeading"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="Movie Name"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/first_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/rating_star"
+        android:background="@android:color/transparent"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/second_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/rating_star"
+        android:background="@android:color/transparent"
+
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/first_star"
+        app:layout_constraintEnd_toEndOf="@id/third_star"/>
+
+    <ImageButton
+        android:id="@+id/third_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/rating_star"
+        android:background="@android:color/transparent"
+
+
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/fourth_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/rating_star"
+        android:background="@android:color/transparent"
+
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/third_star"
+        app:layout_constraintEnd_toEndOf="@id/fifth_star"/>
+
+    <ImageButton
+        android:id="@+id/fifth_star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/rating_star"
+        android:background="@android:color/transparent"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/reviewField"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/rounded_bg"
+        android:layout_margin="20dp"
+        android:padding="20sp"
+
+        android:hint="How do you feel about movie name"
+
+        app:layout_constraintTop_toBottomOf="@id/third_star"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/publishButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="@color/dark_green"
+        android:layout_margin="20dp"
+
+        android:text="Post your review"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/reviewField"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="@color/light_grey"
+        android:layout_margin="20dp"
+
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/publishButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

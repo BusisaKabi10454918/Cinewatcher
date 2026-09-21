@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".collection"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:contentDescription="returnButton"
+        android:src="@drawable/back_button"
+        android:background="@android:color/transparent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/pageHeading"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="Categories"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!--Ideally here we want automatic category listing,
+     to make sure we don't accidentally create a category for movies
+     we don't have in the listing -->
+
+    <TextView
+        android:id="@+id/categoryA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pageHeading"
+
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryA"
+
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryC"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryB"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryD"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryC"
+
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryD"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryE"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryG"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryF"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryH"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryG"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryI"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryH"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryJ"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryI"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryK"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryJ"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryK"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryM"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryL"
+        android:text="Category Name"
+
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
